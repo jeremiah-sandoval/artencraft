@@ -94,11 +94,61 @@ h4{
 }
 
 /*========================== HEADER CSS =================================*/
-#main-nav{
-  position: absolute;
+/* The side navigation menu */
+.main-nav {
   background-color: #ffffff;
   max-width: 420px;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 9999;
 }
+
+/* The navigation menu links */
+.main-nav a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #888;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.main-nav li:hover {
+  color: #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Position and style the close button (top right corner) */
+.main-nav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 30px;
+}
+
+#mainnav-overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .main-nav {padding-top: 15px;}
+  .main-nav a {font-size: 18px;}
+}
+
 header .top{
   background-color: #000;
 }
