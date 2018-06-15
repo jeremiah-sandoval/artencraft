@@ -11,7 +11,7 @@ $(document).ready(function(){
   $('#mainnav-close').click(function(){ closenav(); });
   $('#submenu-close').click(function(){ closenav(); });
   $('#mainnav-overlay').click(function(){ closenav(); });
-  $('#main-nav ul li').hover(function(){
+  $('#main-nav > .navigation > ul > li').hover(function(){
     $(this).find('.submenu').toggle();
   });
 
