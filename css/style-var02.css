@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
+body{
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d2d2f;
+}
+.container-fluid{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+a, .btn-link{
+  color: #19a1df;
+  text-decoration: none;
+}
+a:hover, .btn-link:hover{
+  color: #1479a7;
+  text-decoration: none;
+}
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1{
+  font-size: 32px;
+  font-weight: 700;
+}
+h2{
+  font-size: 28px;
+  font-weight: 700;
+}
+h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+h4{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.text-white{
+  color: #fff;
+}
+.text-grey{
+  color: #999;
+}
+.text-red{
+  color: #d2120c;
+}
+.text-green{
+  color: #00b601;
+}
+
+.bg-grey{
+  background-color: #f2f2f2;
+}
+
+.divider{
+  display: block;
+  border-top: 1px solid #cccccc;
+}
+
+.btn-primary{
+  background-color: #00b601;
+  border-color: #00b601;
+  border-bottom: 5px solid #009800;
+}
+.btn-primary:hover{
+  background-color: #009800;
+  border-color: #009800;
+}
+.btn-secondary{
+  background-color: #d2120c;
+  border-color: #d2120c;
+}
+.btn-secondary:hover{
+  background-color: #d2120c;
+  border-color: #d2120c;
+}
+.btn-dark{
+  background-color: #000;
+  border-color: #000;
+}
+.btn-dark:hover{
+
+}
+.btn-grey{
+  background-color: #2e2c2d;
+  border-color: #2e2c2d;
+  color: #fff;
+}
+.btn-grey:hover{
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #333;
+}
+
+.label {
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #d2120c;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  text-align: right;
+  z-index: 1;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #d2120c;
+    padding: 15px 15px;
+}
+
+/*========================== HEADER CSS =================================*/
+/* The side navigation menu */
+.main-nav {
+  background-color: #ffffff;
+  max-width: 420px;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  display: none;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 9;
+}
+
+/* The navigation menu links */
+.main-nav > .navigation > ul > li > a {
+  padding: 10px 30px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: #2d2d2f;
+}
+.main-nav > .navigation > ul > li > a:hover{
+  color: #d2120c;
+}
+
+/* When you mouse over the navigation links, change their color */
+.main-nav > .navigation > ul > li:hover {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.main-nav .navigation{
+  position: relative;
+}
+.main-nav .submenu h5{
+  color: #d2120c;
+  font-weight: 700;
+}
+.main-nav .submenu li{
+  padding: 5px 0;
+  word-wrap: break-word;
+}
+.main-nav .submenu{
+  -webkit-border-radius: 0 5px 5px 0;
+  -khtml-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  width: 800px;
+  left: calc(100% - 8px);
+  z-index: 8;
+  background-color: #fff;
+}
+.main-nav .submenu a{
+  color: #2d2d2f;
+}
+.main-nav .submenu a:hover{
+  color: #d2120c;
+}
+
+/* Position and style the close button (top right corner) */
+.main-nav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #888;
+  display: block;
+  transition: 0.3s;
+}
+
+#mainnav-overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 7;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .main-nav {padding-top: 15px;}
+  .main-nav a {font-size: 18px;}
+}
+
+header .top{
+  background-color: #000;
+}
+header .top .logo img{
+  width: 100%;
+}
+header .bottom{
+  background-color: #f2f2f2;
+}
+
+/*======================== BREADCRUMB CSS ===============================*/
+ul.breadcrumb{
+  background-color: #fff;
+  padding: 10px 0;
+}
+ul.breadcrumb li{
+  display: inline-block;
+  padding-left: 0 !important;
+  padding-right: 10px;
+}
+ul.breadcrumb li:before{
+  content: '' !important;
+}
+ul.breadcrumb li i.fa-chevron-right{
+  padding-right: 10px;
+  font-size: 10px;
+  vertical-align: middle;
+}
+ul.breadcrumb li:first-child:before{
+  padding: 0;
+}
+ul.breadcrumb li.active a{
+  color: #2d2d2f;
+}
+
+/*======================== PRODUCTS CSS ===============================*/
+div.product-review ul.star-rating,
+div.product-review ul.star-rating li,
+div.product-review .reviews-link{
+  display: inline-block;
+  vertical-align: middle;
+}
+div.product-review ul.star-rating li i{
+  background-color: #00b601;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 5px;
+}
+div.product-review ul.star-rating li i.light{
+  background-color: #ccc;
+}
+div.product-review ul,
+div.product-review strong,
+div.product-review span,
+div.product-review a{
+  vertical-align: middle;
+}
+div.product-review span{
+  border-left: 1px solid #ccc;
+}
+div.gallery{
+  position: relative;
+}
+
+div.label-overview .label{
+  background-color: #009fe3;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  color: #fff;
+  padding: 10px 15px 15px;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 700;
+  z-index: 1;
+  min-width: 180px;
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+div.label-overview .label small{
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+}
+#prodCarousel{
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+  display: block;
+  position: relative;
+  padding: 25px;
+  width: 100%;
+}
+.carousel {
+  margin-top: 20px;
+}
+.carousel-item .thumb {
+  width: 15%;
+  cursor: pointer;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: .8%;
+}
+.carousel-item .thumb:hover,
+.carousel-item .thumb.active{
+  border: 1px solid #000;
+}
+.carousel-item .thumb img {
+	width: 100%;
+	padding: 10px 5px;
+}
+.carousel-item img {
+	width: 100%;
+}
+
+.price-block .price{
+  font-size: 36px;
+  font-weight: 900;
+}
+.price-block .price span{
+  font-size: 24px;
+}
+.discount-info{
+  border-left: 5px solid #ff9a00;
+}
+
+.product-info-links ul li{
+  display: inline-block;
+  padding: 0 10px;
+}
+.faqs ol li{
+  list-style: decimal;
+}
+
+
+
+div.product-bundels {
+  border: 1px solid #ccc;
+}
+
+.swogo-invisible{
+  display: none;
+}
+.swogo-product-images-container {
+  height: 120px;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+}
+.swogo-product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.swogo-title{
+  height: 34px;
+  line-height: 17px;
+  overflow: hidden;
+  text-align: center;
+}
+.swogo-price{
+  text-align: center;
+  font-weight: 700;
+}
+.swogo-summary{
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  padding: 10px 20px;
+  text-align: right;
+}
+.swogo-summary.last{
+  border-bottom: none;
+}
+.swogo-summary .swogo-summary-info-container,
+.swogo-summary .swogo-buttons-container{
+  display: inline-block;
+}
+.swogo-summary .swogo-summary-info,
+.swogo-summary .swogo-price{
+  font-size: 24px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+div.customer-reviews .progress{
+  margin: 5px 0;
+}
+div.customer-reviews .progress-bar{
+  background-color: #00b601;
+}
+div.customer-reviews .review-title,
+div.customer-reviews .review-item{
+  border-bottom: 1px solid #ccc;
+}
+
+div.accessories .acc-img img{
+  width: 100%;
+}
+div.accessories .acc-title a{
+  color: #2d2d2f;
+  font-size: 18px;
+  font-weight: 700;
+}
+div.accessories .acc-title a:hover{
+  color: #d2120c;
+}
+div.accessories .price-block .price{
+  font-size: 24px;
+}
+
+div.related-items h3{
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+div.related-items .item-image img{
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 0 auto;
+  outline: none;
+  z-index: 1;
+}
+div.related-items .item-title{
+  height: 34px;
+  line-height: 17px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d2d2f;
+  margin-top: 20px;
+  overflow: hidden;
+}
+div.related-items .item-title:hover{
+  color: #d2120c;
+}
+div.related-items .item-price{
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+div.related-items .label{
+  font-weight: 600;
+  left: auto;
+  right: 5px;
+  top: 15%;
+  z-index: 1;
+}
+
+div.product-bottom > .row{
+  border: 1px solid #ccc;
+  margin: 0;
+}
+div.product-bottom .prod-bottom-img-container{
+  border-right: 1px solid #ccc;
+}
+div.product-bottom .price-block{
+  background-color: #f2f2f2;
+  padding: 30px 20px;
+}
+div.product-bottom .price-block .stock-data{
+  float: left;
+}
+div.product-bottom .price-block .add-to-cart{
+  float: right;
+}
+
+
+footer .top{
+  background-color: #000;
+}
+footer .top h4{
+  color: #fff;
+  padding-bottom: 10px;
+}
+footer .top .social-media ul li{
+  display: inline-block;
+}
+footer nav.navigation-footer ul li{
+  padding: 0 0 5px;
+}
+footer nav.navigation-footer ul li a{
+  color: #fff;
+  display: block;
+  padding-left: 20px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+footer nav.navigation-footer ul li a:before {
+  -webkit-transform: rotate(-45deg);
+  -khtml-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  content: '';
+  height: 6px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  left: 0;
+}
+footer nav.navigation-footer ul li a.readmore:before {
+  border: 2px solid #d2120c;
+  border-top: none;
+  border-left: none;
+}
+footer .bottom{
+  text-align: center;
+}
+footer .bottom .payment-methods li{
+  display: inline-block;
+  padding: 0 5px;
+}
+
+
+@media(min-width:992px){
+  .mobile-hide{
+    display: block;
+  }
+  .cart-link .mobile-hide{
+    display: inline-block;
+  }
+}
+@media(max-width: 991px){
+  .mobile-hide{
+    display: none;
+  }
+  div.product-bottom .price-block .stock-data,
+  div.product-bottom .price-block .add-to-cart{
+    float: none;
+  }
+
+}
+
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+.col-md-15{
+  width: 50%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+  .col-md-15{
+    width: 33.33%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+/*======================== MEDIA QUERIES CSS ===============================*/
+@media (max-width: 575px){
+  header .top .logo{
+    text-align: center;
+  }
+  header .top .logo img{
+    width: 150px;
+  }
+}
+@media (min-width: 576px) {
+  .container{
+    min-width: 576px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    min-width: 768px;
+  }
+}
+@media (max-width: 991px){
+  .main-nav .submenu{
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .container{
+    max-width: 992px;
+  }
+  .main-nav .submenu{
+    width: 700px;
+  }
+}
+@media (min-width: 1024px){
+  .main-nav .submenu{
+    width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1200px;
+  }
+}
