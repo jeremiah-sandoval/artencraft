@@ -55,6 +55,9 @@ h4{
 .text-green{
   color: #00b601;
 }
+.text-blue{
+  color: #19a1df;
+}
 
 .bg-grey{
   background-color: #f2f2f2;
@@ -373,7 +376,14 @@ div.label-overview .label small{
   list-style: decimal;
 }
 
+.product-expert .expert-img img{
+  width: 100%;
+  border-radius: 50%;
+}
 
+.morecontent {
+  display: none;
+}
 
 div.product-bundels {
   border: 1px solid #ccc;
