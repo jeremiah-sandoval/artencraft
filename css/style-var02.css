@@ -102,6 +102,16 @@ h4{
   border-color: #f2f2f2;
   color: #333;
 }
+.btn-light{
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #19a1df;
+}
+.btn-light:hover{
+  background-color: #efefef;
+  border-color: #efefef;
+  color: #19a1df;
+}
 
 .label {
   -webkit-border-radius: 5px;
@@ -128,6 +138,12 @@ h4{
 }
 
 /*========================== HEADER CSS =================================*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 8;
+}
 /* The side navigation menu */
 .main-nav {
   background-color: #ffffff;
@@ -385,8 +401,25 @@ div.label-overview .label small{
   display: none;
 }
 
-div.product-bundels {
-  border: 1px solid #ccc;
+.product-bundels .bundel-prod:before{
+  content: '\f055';
+  font-size: 24px;
+  position: absolute;
+  left: -12px;
+  top: 75px;
+}
+.product-bundels .bundel-prod:first-child:before{
+  content: '';
+}
+.product-bundels .bundel-prod img{
+  width: 100%;
+}
+.product-bundels .bundel-prod a.btn{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.product-related .rel-prod img{
+  width: 100%;
 }
 
 .swogo-invisible{
@@ -440,10 +473,6 @@ div.customer-reviews .progress{
 }
 div.customer-reviews .progress-bar{
   background-color: #00b601;
-}
-div.customer-reviews .review-title,
-div.customer-reviews .review-item{
-  border-bottom: 1px solid #ccc;
 }
 
 div.accessories .acc-img img{
