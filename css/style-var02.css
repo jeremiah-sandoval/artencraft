@@ -263,6 +263,46 @@ h4{
   z-index: 7;
 }
 
+.navImgContainer {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.navImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.navImgOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  opacity: .9;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.navImgContainer:hover .navImgOverlay {
+  width: 100%;
+}
+
+.overlayText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .main-nav {padding-top: 15px;}

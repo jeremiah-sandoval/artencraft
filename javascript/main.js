@@ -1,9 +1,6 @@
 /**
 * @app ReadMoreJS
 * @desc Breaks the content of an element to the specified number of words
-* @version 1.0.0
-* @license The MIT License (MIT)
-* @author George Raptis | http://georap.gr
 */
 ;(function (win, doc, undef) {
 	'use strict';
