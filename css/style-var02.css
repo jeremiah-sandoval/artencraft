@@ -42,7 +42,9 @@ h4{
   font-size: 20px;
   font-weight: 700;
 }
-
+.text-default{
+  color:  #2d2d2f;
+}
 .text-white{
   color: #fff;
 }
@@ -126,6 +128,31 @@ h4{
   position: absolute;
   text-align: right;
   z-index: 1;
+}
+.readmore, .readmore-link{
+  position: relative;
+  padding-left: 15px;
+}
+.readmore-link{
+  color: #19a1df !important;
+}
+.readmore:before, .readmore-link:before{
+  -webkit-transform: rotate(-45deg);
+  -khtml-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: 2px solid #19a1df;
+  border-top: none;
+  border-left: none;
+  content: '';
+  height: 6px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  left: 0;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -251,6 +278,16 @@ header .top .logo img{
 header .bottom{
   background-color: #f2f2f2;
 }
+
+nav.nav-right ul li{
+  display: inline-block;
+}
+@media screen and (max-width:991px){
+  nav.nav-right .dropdown-toggle::after{
+    display: none;
+  }
+}
+
 
 /*======================== BREADCRUMB CSS ===============================*/
 ul.breadcrumb{
@@ -690,6 +727,9 @@ footer .bottom .payment-methods li{
   .main-nav .submenu{
     display: none !important;
   }
+  .hidden-mobile{
+    display: none !important;
+  }
 }
 @media (min-width: 992px) {
   .container{
@@ -697,6 +737,9 @@ footer .bottom .payment-methods li{
   }
   .main-nav .submenu{
     width: 700px;
+  }
+  .hidden-desktop{
+    display: none !important;
   }
 }
 @media (min-width: 1024px){

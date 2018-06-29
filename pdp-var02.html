@@ -69,6 +69,24 @@
       <a href="javascript:void(0)" id="mainnav-close" class="closebtn">&times;</a>
       <nav class="navigation">
         <ul>
+          <li class="bg-grey hidden-desktop">
+            <a data-toggle="collapse" href="#accountMobileMenu" role="button" aria-expanded="false" aria-controls="accountMobileMenu">
+              <i class="fas fa-user-alt pr-2"></i>
+              <span class="d-inline-block">Infoggen</span>
+            </a>
+          </li>
+          <li id="accountMobileMenu" class="collapse bg-grey">
+            <ul>
+              <li class="pl-5 pt-3 pb-2"><a class="text-default" href="#">Registreren</a></li>
+              <li class="pl-5 pt-2 pb-3"><a class="text-default" href="#">Mijn wenslijsten</a></li>
+            </ul>
+          </li>
+          <li class="bg-grey hidden-desktop">
+            <a href="">
+              <i class="fas fa-phone pr-2"></i>
+              <span class="d-inline-block">Klantenservice</span>
+            </a>
+          </li>
           <li><a href="">Fotografie</a>
             <div class="submenu">
               <div class="submenu-wrapper p-4">
@@ -916,21 +934,21 @@
 
     <div class="container-fluid">
       <header>
-        <div class="top py-4">
+        <div class="top py-xl-4 py-lg-4 py-md-3 py-sm-3 py-2">
           <div class="container">
             <div class="row m-0">
-              <div class="col-lg-2 col-sm-4 col-12 align-self-center order-lg-1 order-sm-2 order-1 px-2 m-auto">
+              <div class="col-lg-2 col-sm-4 col-4 align-self-center order-lg-1 order-sm-2 order-2 px-2 m-auto">
                 <div class="logo">
                   <img src="images/photolib/2885217.png" alt="" width="100%">
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-3 col-sm-4 col-3 order-lg-2 order-sm-1 order-2 px-2 pt-sm-0 pt-2 m-auto">
+              <div class="col-xl-2 col-lg-3 col-sm-4 col-4 order-lg-2 order-sm-1 order-1 px-2 pt-sm-0 pt-2 m-auto">
                 <a href="javascript:void(0)" id="mainnav-trigger" class="btn btn-grey d-lg-block d-md-inline-block text-center">
                   <i class="fas fa-bars pr-lg-2 pr-sm-0"></i>
                   <span class="d-none d-lg-inline-block">Kies een categorie</span>
                 </a>
               </div>
-              <div class="col-lg-5 col-12 order-lg-3 order-4 px-2 pt-3 pt-lg-0 m-auto">
+              <div id="search-header" class="col-lg-5 col-12 order-lg-3 order-4 px-2 pt-3 pt-lg-0 m-auto collapse d-lg-block">
                 <form action="">
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Zoekken naar..." />
@@ -941,10 +959,13 @@
 
                 </form>
               </div>
-              <div class="col-xl-3 col-lg-2 col-sm-4 col-9 order-lg-4 order-3 px-2  pt-sm-0 pt-2 m-auto text-right">
-                <nav>
+              <div class="col-xl-3 col-lg-2 col-sm-4 col-4 order-lg-4 order-3 px-2  pt-sm-0 pt-2 m-auto text-right">
+                <nav class="nav-right">
                   <ul>
-                    <li class="d-inline-block px-xl-3 px-lg-1 px-md-2 px-1">
+                    <li class="px-xl-3 px-lg-1 px-md-2 px-2 hidden-desktop">
+                      <a data-toggle="collapse" href="#search-header" role="button" aria-expanded="false" aria-controls="search-header"><i class="fas fa-search text-white"></i></a>
+                    </li>
+                    <li class="px-xl-3 px-lg-1 px-md-2 px-2 hidden-mobile">
                       <div class="dropdown">
                         <a href="" class="dropdown-toggle text-white" id="countryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NL</a>
                         <div class="dropdown-menu" aria-labelledby="countryMenu">
@@ -953,7 +974,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="d-inline-block px-xl-3 px-lg-1 px-md-2 px-1">
+                    <li class="px-xl-3 px-lg-1 px-md-2 px-2 hidden-mobile">
                       <a href="" class="dropdown-toggle text-white" id="accountMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-user-alt pr-2"></i>
                         <span class="d-none d-xl-inline-block">Infoggen</span>
@@ -963,7 +984,7 @@
                         <a class="dropdown-item" href="#">Mijn wenslijsten</a>
                       </div>
                     </li>
-                    <li class="d-inline-block px-xl-3 px-lg-1 px-md-2 px-1">
+                    <li class="px-xl-3 px-lg-1 px-md-2 px-2">
                       <a href="" class="dropdown-toggle text-white mini-cart" id="cartMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart"></i></a>
                     </li>
                   </ul>
@@ -997,10 +1018,10 @@
 
       </header>
 
-      <div class="body-wrapper">
+      <div class="body-wrapper py-3">
         <div class="container">
           <div class="product">
-            <div class="row">
+            <div class="row d-none d-md-block d-lg-block d-xl-block">
               <div class="col-12">
                 <nav aria-label="breadcrumb">
                   <ul class="breadcrumb">
@@ -1033,7 +1054,7 @@
             </div>
 
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-lg-6 py-4">
                 <div class="gallery">
                   <div class="label-overview">
                     <span class="label">
@@ -1042,7 +1063,7 @@
                     </span>
                   </div>
                   <div class="gallery-overview">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item p-4 active">
                                 <img src="https://www.artencraft.be/images/photolib/2303201_543x408.png">
@@ -1093,7 +1114,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-lg-6 py-4">
 
                 <div class="price-block">
                   <div class="form-group">
@@ -1176,7 +1197,7 @@
                         <img src="http://via.placeholder.com/300x300" alt="">
                       </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 m-auto">
                       <h4 class="mb-0">"Aangenaam verrast, compact &amp; kwaliteit"</h4>
                       <span class="text-blue">Gertjan Familienaam, Natuurfotograaf</span>
                       <p class="my-2">
@@ -1205,12 +1226,12 @@
                       </tr>
                     </tbody>
                   </table>
-                  <a href="" class="readmore smooth-scroll" data-scroll="data-techinfo"><i class="fas fa-chevron-right text-blue pr-2"></i>Bekijk alle kenmerken</a>
+                  <a href="#product-specs-data" class="readmore smooth-scroll" data-scroll="data-techinfo"></i>Bekijk alle kenmerken</a>
                 </div>
                 <div class="divider"></div>
                 <div id="product-desc" class="py-4">
                   <h3 class="mb-3">Omschrijving</h3>
-                  <div class="product-desc" id="prod-desc-collapse" class="">
+                  <div class="product-desc readmore-content" id="prod-desc-collapse">
                     <p>
                       Het is al geruime tijd een bekend gegeven dat een lazer, tijdens het bekijken van de layout van een pagina, afgeleid wordt door de tekstuele inhoud.
                       Het belangrijke punt van het gebruik van Lorem Ipsum is dat het uit een min of meer normale verdeling van letters bestaat, in tegenstelling tot
@@ -1284,8 +1305,8 @@
                       </div>
                     </div>
                   </div>
-                  <a href="" class="readmore smooth-scroll d-block py-2"><i class="fas fa-chevron-right text-blue pr-2"></i>Bekijk alle kenmerken</a>
-                  <a href="" class="readmore smooth-scroll d-block py-2"><i class="fas fa-chevron-right text-blue pr-2"></i>Stel een vraag</a>
+                  <a href="" class="readmore smooth-scroll d-block py-2"></i>Bekijk alle kenmerken</a>
+                  <a href="" class="readmore smooth-scroll d-block py-2"></i>Stel een vraag</a>
 
                 </div>
                 <div class="divider"></div>
@@ -1327,8 +1348,8 @@
                         </ul>
                       </div>
                     </div>
-                    <a href="" class="readmore smooth-scroll d-block py-2"><i class="fas fa-chevron-right text-blue pr-2"></i>Bekijk alle review</a>
-                    <a href="" class="readmore smooth-scroll d-block py-2"><i class="fas fa-chevron-right text-blue pr-2"></i>Schrijf een review</a>
+                    <a href="" class="readmore smooth-scroll d-block py-2"></i>Bekijk alle review</a>
+                    <a href="" class="readmore smooth-scroll d-block py-2"></i>Schrijf een review</a>
                   </div>
                 </div>
               </div>
