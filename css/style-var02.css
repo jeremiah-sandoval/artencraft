@@ -160,8 +160,40 @@ h4{
     color: #495057;
     background-color: #fff;
     border: none;
-    border-bottom: 2px solid #d2120c;
+    border-bottom: 2px solid #00b601;
     padding: 15px 15px;
+}
+
+/*========================== FLAG CSS =================================*/
+.flag-icon,
+.flag-icon-background {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+.flag-icon {
+    position: relative;
+    display: inline-block;
+    width: 1.33333333em;
+    line-height: 1em
+}
+.flag-icon:before {
+    content: "\00a0"
+}
+.flag-icon.flag-icon-squared {
+    width: 1em
+}
+.flag-icon-be {
+    background-image: url(https://www.artencraft.be/images/css/flags/4x3/be.svg)
+}
+.flag-icon-be.flag-icon-squared {
+    background-image: url(https://www.artencraft.be/images/css/flags/1x1/be.svg)
+}
+.flag-icon-nl {
+    background-image: url(https://www.artencraft.be/images/css/flags/4x3/nl.svg)
+}
+.flag-icon-nl.flag-icon-squared {
+    background-image: url(https://www.artencraft.be/images/css/flags/1x1/nl.svg)
 }
 
 /*========================== HEADER CSS =================================*/
