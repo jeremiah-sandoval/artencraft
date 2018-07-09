@@ -176,4 +176,10 @@ $(document).ready(function(){
   });
 
 
+	$('#prod-specs-btn').click(function(){
+	    $(this).text(function(i,old){
+	        return old=='Bekijk alle kenmerken' ?  'Sluit alle kenmerken' : 'Bekijk alle kenmerken';
+	    });
+	});
+
 });
