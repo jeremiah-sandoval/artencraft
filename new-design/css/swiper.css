@@ -162,13 +162,6 @@
   cursor: auto;
   pointer-events: none;
 }
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  background: url(../img/icon-9.png) 0 0 #fff;
-  background-size: 120px 60px;
-  left: 50px;
-  right: auto;
-}
 .swiper-button-prev:hover,
 .swiper-container-rtl .swiper-button-next:hover{
   background-position: -60px 0;
@@ -180,13 +173,6 @@
 .swiper-button-prev.swiper-button-white,
 .swiper-container-rtl .swiper-button-next.swiper-button-white {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
-}
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  background: url(../img/icon-10.png) -60px 0 #fff;
-  background-size: 120px 60px;
-  right: 50px;
-  left: auto;
 }
 .swiper-button-next:hover,
 .swiper-container-rtl .swiper-button-prev:hover{
