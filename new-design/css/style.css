@@ -1813,6 +1813,7 @@ span.pagination {
   -webkit-transition: all .3s;
   background: rgba(255, 255, 255, .9);
   opacity: 0;
+  z-index: 4;
 }
 
 .product-shortcode.style-1 .preview-buttons .button, .product-shortcode.style-7 .preview-buttons .button {
