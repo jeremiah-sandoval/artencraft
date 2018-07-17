@@ -1760,6 +1760,23 @@ span.pagination {
   padding-bottom: 2px;
 }
 
+.product-shortcode.style-1 .add-to-cart {
+  position: absolute;
+  right: 20px;
+}
+
+.products-content .product-shortcode.style-1 .add-to-cart span{
+  display: none;
+}
+
+.product-shortcode.style-1 .stock{
+  width: 80%;
+}
+
+.product-shortcode.style-1 .stock span{
+  font-size: 14px;
+}
+
 .product-shortcode.style-1 .add-to-compare{
   padding: 10px 0;
   font-size: 14px;
@@ -1979,7 +1996,7 @@ span.pagination {
   }
   .products-content.view-inline .product-shortcode.style-1 .preview {
     position: absolute;
-    left: 0;
+    left: 30px;
     top: 30px;
 
   }
@@ -2006,6 +2023,9 @@ span.pagination {
     position: relative;
     transition: none;
     -webkit-transition: none;
+  }
+  .products-content.view-inline .product-shortcode.style-1 .add-to-cart span{
+    display: inline-block;
   }
 }
 
