@@ -1760,13 +1760,8 @@ span.pagination {
   padding-bottom: 2px;
 }
 
-.product-shortcode.style-1 .add-to-cart {
-  position: absolute;
-  right: 20px;
-}
-
-.products-content .product-shortcode.style-1 .add-to-cart span{
-  display: none;
+.products-content .product-shortcode.style-1 .add-to-cart a.btn{
+  display: block;
 }
 
 .product-shortcode.style-1 .stock{
@@ -2024,8 +2019,10 @@ span.pagination {
     transition: none;
     -webkit-transition: none;
   }
-  .products-content.view-inline .product-shortcode.style-1 .add-to-cart span{
-    display: inline-block;
+  .products-content.view-inline .product-shortcode.style-1 .add-to-cart{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
   }
 }
 
