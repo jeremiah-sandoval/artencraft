@@ -1728,7 +1728,7 @@ span.pagination {
 }
 
 .product-shortcode.style-1 .title {
-  height: 60px;
+  /* height: 60px; */
   margin-bottom: 10px;
 }
 
