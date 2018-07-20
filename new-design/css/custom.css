@@ -683,8 +683,17 @@ div.product-bottom .price-block .add-to-cart{
   background-color: #f3f3f3;
   padding: 10px 15px;
 }
+.category-filter .filter-header a{
+  color: #2d2d2f;
+}
+.category-filter .filter-header a i{
+  font-size: 12px;
+  float: right;
+  padding: 5px 0;
+}
 .category-filter .filter-entry{
   padding: 10px 15px;
+  background-color: #fafafa;
 }
 .category-filter .filter-entry label{
   font-size: 14px;
