@@ -1163,7 +1163,7 @@
       </nav>
     </div>
 
-    <div id="mainnav-overlay" class="overlay"></div>
+    <div id="body-overlay" class="overlay"></div>
 
     <div class="container-fluid">
       <header>
@@ -1267,6 +1267,10 @@
           <div class="row">
             <div class="col-lg-3">
               <div class="category-filter accordion" id="category-filter">
+                <div class="mobile-header">
+                  <span>Verber filters</span>
+                  <a href="javascript:void(0)" id="catfilter-close" class="closebtn">&times;</a>
+                </div>
                 <div class="brand-filter pb-1">
                   <div class="filter-header">
                     <a class="d-block" href="#brand-filter" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="brand-filter">
@@ -1692,6 +1696,14 @@
               </div>
 
               <div class="category-listing">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="javascript:void(0)" id="catfilter-trigger" class="btn btn-grey text-center">
+                      <i class="fas fa-bars pr-lg-2 pr-sm-0"></i>
+                      <span class="d-inline-block">Toon filters</span>
+                    </a>
+                  </div>
+                </div>
                 <div class="category-topnav row py-4">
                   <div class="col-9">
                     <div class="d-inline-block mr-3 mb-2">
@@ -2181,8 +2193,8 @@
                    </div>
                </div>
 
-               <div class="row pb-5">
-                   <div class="col-sm-3 hidden-xs">
+               <div class="row pt-4 pb-5">
+                   <div class="col-md-3 d-none d-md-block">
                        <a class="button size-1 style-5" href="#">
                            <span class="button-wrapper">
                                <span class="icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
@@ -2190,7 +2202,7 @@
                            </span>
                        </a>
                    </div>
-                   <div class="col-sm-6 text-center">
+                   <div class="col-md-6 text-center">
                        <div class="pagination-wrapper">
                            <a class="pagination active">1</a>
                            <a class="pagination">2</a>
@@ -2200,7 +2212,7 @@
                            <a class="pagination">23</a>
                        </div>
                    </div>
-                   <div class="col-sm-3 hidden-xs text-right">
+                   <div class="col-md-3 d-none d-md-block text-right">
                        <a class="button size-1 style-5" href="#">
                            <span class="button-wrapper">
                                <span class="icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
@@ -2348,12 +2360,5 @@
     <script src="js/global.js"></script>
 
     <script src="../javascript/main.js" ></script>
-    <script>
-      $(document).ready(function(){
-        $('.category-filter .filter-header a').click(function(){
-          $(this).find('i').toggleClass('fa-minus fa-plus');
-        });
-      });
-    </script>
   </body>
 </html>

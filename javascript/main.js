@@ -121,21 +121,35 @@
 
 $(document).ready(function(){
   // Main Nav Menu
-  function closenav(){
-    $('#main-nav').css({'display':'none', 'width': '0px'});
-    $('#mainnav-overlay').hide();
+	function closeside(){
+    $('#category-filter').css({'display':'none', 'width': '0px'});
+		$('#main-nav').css({'display':'none', 'width': '0px'});
+    $('#body-overlay').hide();
+		$('body').css('overflow-y', 'scroll');
   }
   function opennav(){
     $('#main-nav').css({'display':'block', 'width': '300px'});
-    $('#mainnav-overlay').show();
+    $('#body-overlay').show();
+		$('body').css('overflow-y', 'hidden');
   }
   $('#mainnav-trigger').click(function(){ opennav(); });
-  $('#mainnav-close').click(function(){ closenav(); });
-  $('#submenu-close').click(function(){ closenav(); });
-  $('#mainnav-overlay').click(function(){ closenav(); });
+  $('#mainnav-close').click(function(){ closeside(); });
+  $('#submenu-close').click(function(){ closeside(); });
   $('#main-nav > .navigation > ul > li').hover(function(){
     $(this).find('.submenu').toggle();
   });
+
+	// Filter Menu
+  function openfilter(){
+    $('#category-filter').css({'display':'block', 'width': '300px'});
+    $('#body-overlay').show();
+		$('body').css('overflow-y', 'hidden');
+  }
+  $('#catfilter-trigger').click(function(){ openfilter(); });
+  $('#catfilter-close').click(function(){ closeside(); });
+
+	// Close Any Sidebar
+	$('#body-overlay').click(function(){ closeside(); });
 
   // Sticky Header
   $(window).scroll(function(){
@@ -175,11 +189,14 @@ $(document).ready(function(){
     lessLink: 'Lees minder'
   });
 
-
 	$('#prod-specs-btn').click(function(){
 	    $(this).text(function(i,old){
 	        return old=='Bekijk alle kenmerken' ?  'Sluit alle kenmerken' : 'Bekijk alle kenmerken';
 	    });
 	});
 
+	// Category Filter Accordion
+	$('.category-filter .filter-header a').click(function(){
+		$(this).find('i').toggleClass('fa-minus fa-plus');
+	});
 });

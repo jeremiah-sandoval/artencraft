@@ -217,6 +217,7 @@ h4{
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   z-index: 9;
+  overflow-y: scroll;
 }
 
 /* The navigation menu links */
@@ -286,7 +287,7 @@ h4{
   transition: 0.3s;
 }
 
-#mainnav-overlay{
+#body-overlay{
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
@@ -698,6 +699,51 @@ div.product-bottom .price-block .add-to-cart{
 .category-filter .filter-entry label{
   font-size: 14px;
   margin-bottom: 2px;
+}
+@media(max-width: 991px){
+  /* Mobile Category Filter */
+  #category-filter {
+    background-color: #ffffff;
+    max-width: 420px;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    display: none;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    z-index: 9;
+    overflow-y: scroll;
+  }
+  #category-filter .mobile-header{
+    background-color: #2e2c2d;
+    color: #ffffff;
+    padding: 20px;
+  }
+  #category-filter .mobile-header span{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  #category-filter .mobile-header .closebtn{
+    float: right;
+    color: #ffffff;
+    font-size: 28px;
+  }
+  #catfilter-trigger,
+  #category-filter .mobile-header{
+    display: block;
+  }
+}
+@media(min-width: 992px){
+  #category-filter{
+    display: block !important;
+    width: 100% !important;
+  }
+  #catfilter-trigger,
+  #category-filter .mobile-header{
+    display: none;
+  }
 }
 
 

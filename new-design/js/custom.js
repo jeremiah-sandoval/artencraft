@@ -124,10 +124,12 @@ $(document).ready(function(){
   function closenav(){
     $('#main-nav').css({'display':'none', 'width': '0px'});
     $('#mainnav-overlay').hide();
+		$(document.body).css({'overflow-y': 'scroll'});
   }
   function opennav(){
     $('#main-nav').css({'display':'block', 'width': '300px'});
     $('#mainnav-overlay').show();
+		$(document.body).css({'overflow-y': 'hidden'});
   }
   $('#mainnav-trigger').click(function(){ opennav(); });
   $('#mainnav-close').click(function(){ closenav(); });
