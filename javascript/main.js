@@ -199,4 +199,29 @@ $(document).ready(function(){
 	$('.category-filter .filter-header a').click(function(){
 		$(this).find('i').toggleClass('fa-minus fa-plus');
 	});
+
+	//Price Filter
+	var minVal = parseInt($('.min-price').text());
+	var maxVal = parseInt($('.max-price').text());
+	$( "#prices-range" ).slider({
+			range: true,
+			min: minVal,
+			max: maxVal,
+			step: 5,
+			values: [ minVal, maxVal ],
+			slide: function( event, ui ) {
+					$('.min-price').text(ui.values[ 0 ]);
+					$('.max-price').text(ui.values[ 1 ]);
+			}
+	});
+	$('#price-filter .range-option').hide();
+	$('#change-price a').on('click',
+		function() {
+			$('#price-filter .range-option, #price-filter .checkbox-option').toggle();
+			$(this).text(function(i,old){
+					return old=='Terug' ?  'Kies self een prijs' : 'Terug';
+			});
+		}
+	);
+	
 });

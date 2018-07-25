@@ -1,13 +1,3 @@
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/*This is main JS file that contains custom style rules used in this template*/
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/* Template Name: "EX ZO"*/
-/* Version: 1.0 Initial Release*/
-/* Build Date: 06-02-2016*/
-/* Author: UnionAgency*/
-/* Copyright: (C) 2016 */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-
 /*--------------------------------------------------------*/
 /* TABLE OF CONTENTS: */
 /*--------------------------------------------------------*/
@@ -50,7 +40,7 @@ $(function() {
            $(this).addClass('initialized').ClassyCountdown({
                theme: ($(this).hasClass('light'))?'light':(($(this).hasClass('light-green'))?'light-green':''),
                end: (new Date($(this).data('end'))).getTime()
-           }); 
+           });
         });
 	};
 
@@ -105,8 +95,8 @@ $(function() {
 	/*=====================*/
 	var initIterator = 0;
 	_functions.initSwiper = function(){
-		$('.swiper-container').not('.initialized').each(function(){								  
-			var $t = $(this);								  
+		$('.swiper-container').not('.initialized').each(function(){
+			var $t = $(this);
 
 			var index = 'swiper-unique-id-'+initIterator;
 

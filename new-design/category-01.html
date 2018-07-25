@@ -2392,28 +2392,5 @@
     <script src="js/jquery.ui.touch-punch.min.js"></script>
 
     <script src="../javascript/main.js" ></script>
-    <script>
-        $(document).ready(function(){
-            var minVal = parseInt($('.min-price').text());
-            var maxVal = parseInt($('.max-price').text());
-            $( "#prices-range" ).slider({
-                range: true,
-                min: minVal,
-                max: maxVal,
-                step: 5,
-                values: [ minVal, maxVal ],
-                slide: function( event, ui ) {
-                    $('.min-price').text(ui.values[ 0 ]);
-                    $('.max-price').text(ui.values[ 1 ]);
-                }
-            });
-            $('#price-filter .range-option').hide();
-            $('#change-price').on('click',
-              function() {
-                $('#price-filter .range-option, #price-filter .checkbox-option').toggle();
-              }
-            );
-        });
-    </script>
   </body>
 </html>
