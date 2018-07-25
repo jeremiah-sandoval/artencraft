@@ -1266,6 +1266,25 @@
           </div>
           <div class="row">
             <div class="col-lg-3">
+              <div class="category-leftnav">
+                <div class="leftnav-header">
+                  <a href="#">
+                    <strong>Computer &amp; IT</strong>
+                  </a>
+                </div>
+                <div class="leftnav-list">
+                  <ul>
+                    <li class="active"><a href="#">Laptops</a>
+                      <ul>
+                        <li><a href="#">Apple Macbook</a></li>
+                        <li><a href="#">2-in-1 Laptops</a></li>
+                        <li><a href="#">Gaming Laptops</a></li>
+                        <li><a href="#">Chromebooks</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="category-filter accordion" id="category-filter">
                 <div class="mobile-header">
                   <span>Verber filters</span>
@@ -1323,18 +1342,27 @@
                     </a>
                   </div>
                   <div id="price-filter" class="filter-entry collapse show">
-                    <label class="checkbox-entry d-block">
-                        <input type="checkbox"><span class="pl-2">€ 200 - € 750 <span>(104)</span></span>
-                    </label>
-                    <label class="checkbox-entry d-block">
-                        <input type="checkbox"><span class="pl-2">€ 750 - € 2000 <span>(444)</span></span>
-                    </label>
-                    <label class="checkbox-entry d-block">
-                        <input type="checkbox"><span class="pl-2">€ 2000 - € 2500 <span>(75)</span></span>
-                    </label>
-                    <label class="checkbox-entry d-block">
-                        <input type="checkbox"><span class="pl-2">€ 2500 - € 6700 <span>(68)</span></span>
-                    </label>
+                    <div class="checkbox-option pb-2">
+                      <label class="checkbox-entry d-block">
+                          <input type="checkbox"><span class="pl-2">€ 200 - € 750 <span>(104)</span></span>
+                      </label>
+                      <label class="checkbox-entry d-block">
+                          <input type="checkbox"><span class="pl-2">€ 750 - € 2000 <span>(444)</span></span>
+                      </label>
+                      <label class="checkbox-entry d-block">
+                          <input type="checkbox"><span class="pl-2">€ 2000 - € 2500 <span>(75)</span></span>
+                      </label>
+                      <label class="checkbox-entry d-block">
+                          <input type="checkbox"><span class="pl-2">€ 2500 - € 6700 <span>(68)</span></span>
+                      </label>
+                    </div>
+                    <div class="range-option py-2">
+                      <div id="prices-range"></div>
+                      <div><span>Price:</span> <b class="grey">€ <span class="min-price">200</span> - € <span class="max-price">6700</span></b></div>
+                    </div>
+                    <span id="change-price">
+                      <a href="javascript:void(0)">Kies zelf een prijs</a>
+                    </span>
                   </div>
 
                 </div>
@@ -2359,6 +2387,33 @@
     <script src="js/swiper.jquery.min.js"></script>
     <script src="js/global.js"></script>
 
+    <!-- range slider -->
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
     <script src="../javascript/main.js" ></script>
+    <script>
+        $(document).ready(function(){
+            var minVal = parseInt($('.min-price').text());
+            var maxVal = parseInt($('.max-price').text());
+            $( "#prices-range" ).slider({
+                range: true,
+                min: minVal,
+                max: maxVal,
+                step: 5,
+                values: [ minVal, maxVal ],
+                slide: function( event, ui ) {
+                    $('.min-price').text(ui.values[ 0 ]);
+                    $('.max-price').text(ui.values[ 1 ]);
+                }
+            });
+            $('#price-filter .range-option').hide();
+            $('#change-price').on('click',
+              function() {
+                $('#price-filter .range-option, #price-filter .checkbox-option').toggle();
+              }
+            );
+        });
+    </script>
   </body>
 </html>
