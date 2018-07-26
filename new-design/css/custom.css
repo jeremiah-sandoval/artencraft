@@ -733,6 +733,7 @@ div.product-bottom .price-block .add-to-cart{
     font-size: 14px;
     padding: 2px 10px;
     margin-right: 2px;
+    margin-bottom: 2px;
 }
 .selected-filters ul li.filter-item{
   border-radius: 3px;
