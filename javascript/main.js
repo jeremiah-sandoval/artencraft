@@ -195,11 +195,6 @@ $(document).ready(function(){
 	    });
 	});
 
-	// Category Filter Accordion
-	$('.category-filter .filter-header a').click(function(){
-		$(this).find('i').toggleClass('fa-minus fa-plus');
-	});
-
 	//Price Filter
 	var minVal = parseInt($('.min-price').text());
 	var maxVal = parseInt($('.max-price').text());
@@ -223,5 +218,14 @@ $(document).ready(function(){
 			});
 		}
 	);
-	
+
+	$('.more-less').on('click',
+		function() {
+			$(this).parent().children('.more').toggleClass('d-none d-block');
+			$(this).find('a').text(function(i,old){
+					return old=='Toon minder' ?  'Toon meer' : 'Toon minder';
+			});
+		}
+	);
+
 });
