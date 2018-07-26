@@ -682,8 +682,8 @@ div.product-bottom .price-block .add-to-cart{
   overflow-y: hidden;
 }
 
-.category-filter .filter-header,
-.category-leftnav .leftnav-header{
+.category-listing-header p{
+  display: block;
 }
 .category-filter .filter-header a,
 .category-leftnav .leftnav-header a{
@@ -744,6 +744,9 @@ div.product-bottom .price-block .add-to-cart{
   color: #ccc;
 }
 @media(max-width: 991px){
+  .category-listing-header p{
+    display: none;
+  }
   /* Mobile Category Filter */
   #category-filter {
     background-color: #ffffff;
