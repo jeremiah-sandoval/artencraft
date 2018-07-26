@@ -727,6 +727,21 @@ div.product-bottom .price-block .add-to-cart{
   font-weight: 700;
   padding-bottom: 10px;
 }
+.selected-filters ul li.remove-filters,
+.selected-filters ul li.filter-item{
+    display: inline-block;
+    font-size: 14px;
+    padding: 2px 10px;
+    margin-right: 2px;
+}
+.selected-filters ul li.filter-item{
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.selected-filters ul li i{
+  font-size: 10px;
+  color: #ccc;
+}
 @media(max-width: 991px){
   /* Mobile Category Filter */
   #category-filter {
