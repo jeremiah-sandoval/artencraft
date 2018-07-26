@@ -700,8 +700,13 @@ div.product-bottom .price-block .add-to-cart{
 .category-leftnav .leftnav-list{
   padding: 10px 0;
 }
-.category-filter .filter-entry label{
-  margin-bottom: 5px;
+.category-filter .filter-entry ul{
+  position: relative;
+}
+.category-filter .filter-entry ul li{
+}
+.category-filter .filter-entry ul li.more{
+  display: none;
 }
 .category-leftnav,
 .category-filter{

@@ -219,12 +219,15 @@ $(document).ready(function(){
 		}
 	);
 
+
 	$('.more-less').on('click',
-		function() {
-			$(this).parent().children('.more').toggleClass('d-none d-block');
-			$(this).find('a').text(function(i,old){
+		function(e) {
+			e.preventDefault();
+				$(this).parent().find('.more').slideToggle(150, function(){
+				});
+				$(this).find('a').text(function(i,old){
 					return old=='Toon minder' ?  'Toon meer' : 'Toon minder';
-			});
+				});
 		}
 	);
 
