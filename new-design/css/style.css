@@ -707,6 +707,17 @@ div.product-review ul.star-rating li i{
   font-size: 10px;
   padding-top: 5px;
 }
+div.product-review.small ul.star-rating li i {
+    background-color: #00b601;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 7px;
+    padding-top: 4px;
+}
 div.product-review ul.star-rating li i.light{
   background-color: #ccc;
 }
@@ -2661,6 +2672,74 @@ span.pagination {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 21 - BLOG DETAIL */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 21 - PROFILE PAGE */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.profile-details .username{
+  display: inline-block;
+  border-bottom: 1px solid;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.profile-details .user-detail{
+  padding-left: 20px;
+}
+.profile-details .user-detail h3{
+  position: relative;
+}
+.profile-details .user-detail h3::before{
+  -webkit-transform: rotate(-45deg);
+  -khtml-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: 2px solid #333;
+  border-top: none;
+  border-left: none;
+  content: '';
+  height: 6px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  left: -15px;
+}
+.review-list > ul > li{
+  padding: 10px 0 5px 20px;
+  vertical-align: top;
+}
+.review-list > ul > li span.prod-name:before{
+  -webkit-transform: rotate(-45deg);
+  -khtml-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: 2px solid #333;
+  border-top: none;
+  border-left: none;
+  content: '';
+  height: 6px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  left: -15px;
+}
+.review-list ul li .prod-name{
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+.review-list ul li .score-date{
+  font-size: 14px;
+}
+.review-list a.reviews-link{
+  font-size: 12px;
+}
+
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 22 - MEDIA QUERIES */
