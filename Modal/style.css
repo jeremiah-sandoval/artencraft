@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 body{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 h3{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 h4{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 .text-default{
@@ -83,12 +83,19 @@ a:hover{
 .collapse-link{
   cursor: pointer;
 }
-.price-lg,
-.plus-lg{
+.price-lg{
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.75rem;
+  line-height: 2rem;
   display: block;
+  padding-top: .5rem;
+}
+.plus-lg{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  display: block;
+  padding: 1rem 0px;
 }
 .mobilus-item{
   border-radius: 15px;
@@ -319,7 +326,7 @@ a:hover{
 }
 @media (min-width: 992px){
   .modal-dialog{
-    max-width: 860px;
+    max-width: 720px;
   }
   .prodImg{
     width: 100%;
@@ -329,12 +336,12 @@ a:hover{
     padding-right: 1.5rem;
   }
   .modal-col-item{
-    padding: 2rem;
+    padding: 1.5rem 1rem;
   }
 }
 @media (min-width: 1200px){
   .modal-dialog{
-    max-width: 860px;
+    max-width: 720px;
   }
   .prodImg{
     width: 100%;
@@ -344,6 +351,6 @@ a:hover{
     padding-right: 1.5rem;
   }
   .modal-col-item{
-    padding: 2rem;
+    padding: 1.5rem 1rem;
   }
 }
