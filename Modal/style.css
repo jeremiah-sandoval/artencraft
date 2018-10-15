@@ -26,8 +26,10 @@ a:hover{
   max-width: 100%;
 }
 .modal-content{
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 0px;
+  border-radius: .5rem;
 }
 .modal-option{
   cursor: pointer;
@@ -308,8 +310,8 @@ a:hover{
     width: auto;
   }
   .modal-content{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 768px){
@@ -320,8 +322,8 @@ a:hover{
     width: auto;
   }
   .modal-content{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 992px){
@@ -332,8 +334,8 @@ a:hover{
     width: 100%;
   }
   .modal-content{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .modal-col-item{
     padding: 1.5rem 1rem;
@@ -347,8 +349,8 @@ a:hover{
     width: 100%;
   }
   .modal-content{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .modal-col-item{
     padding: 1.5rem 1rem;
