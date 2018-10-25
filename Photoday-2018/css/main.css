@@ -165,6 +165,9 @@ section.single-hero {
     width: 100%;
     z-index: 0;
 }
+.slides .background-img {
+  background-position: initial !important;
+}
 .overlay:before {
     position: absolute;
     background: rgba(0, 0, 0, .5);
@@ -317,6 +320,7 @@ section.hero .inner-hero {
 h1.large {
     color: #ffffff;
     font-size: 68px;
+    line-height: 70px;
     font-weight: 700;
     text-transform: none;
 }
@@ -746,13 +750,14 @@ select.error {
 
 /* Contact section*/
 
-.block-map{
+/* .block-map{
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
+.block-map,
 .half-width {
     width: 50%;
     height: 100%;
@@ -818,6 +823,37 @@ select.error {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
+}
+.row-img {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 /* End gallery section*/
 
@@ -963,6 +999,7 @@ select.error {
     content: none;
 }
 /* End fat footer section*/
+
 
 
 /*Media queries*/

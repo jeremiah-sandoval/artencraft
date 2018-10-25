@@ -9,6 +9,8 @@
 
 /* Reset & Basics (Inspired by E. Meyers) */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
 *,
 *:before,
 *:after {
@@ -174,7 +176,7 @@ iframe {
 
 body {
     background: #111111;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     color: #cccccc;
     margin: 0;
     font-size: 14px;
@@ -216,11 +218,11 @@ p strong,
 li strong,
 input[type="text"],
 a.link {
-    font-family: "Work Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 .hero-content h3,
 .block-ticket .block-price .block-type {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 em {
     font-style: italic;
