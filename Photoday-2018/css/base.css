@@ -585,6 +585,12 @@ p a:after {
 .pb-250 {
     padding-bottom: 250px !important;
 }
+.pt-300 {
+    padding-top: 300px !important;
+}
+.pb-300 {
+    padding-bottom: 300px !important;
+}
 .mt-5 {
     margin-top: 5px !important;
 }

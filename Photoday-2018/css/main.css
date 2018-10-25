@@ -750,14 +750,22 @@ select.error {
 
 /* Contact section*/
 
-/* .block-map{
+.block-map{
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-} */
-.block-map,
+}
+.block-map iframe{
+  height:100%;
+  width:100%;
+  border:0;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+  -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+}
 .half-width {
     width: 50%;
     height: 100%;
@@ -824,37 +832,7 @@ select.error {
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
 }
-.row-img {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
 
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 /* End gallery section*/
 
 
