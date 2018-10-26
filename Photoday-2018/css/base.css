@@ -429,10 +429,10 @@ input[type="submit"] textarea,
     color: #ffffff;
     padding: 11px 40px;
     border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: : 25px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: : 3px;
 }
 a.link {
     position: relative;
