@@ -337,6 +337,12 @@ h1.large {
     margin-bottom: 40px;
     color: #ffffff;
 }
+.foto-span{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #efefef;
+}
 /* End hero section*/
 
 
