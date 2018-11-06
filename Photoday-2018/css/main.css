@@ -583,6 +583,11 @@ ul.block-topic li {
 }
 /* End Schedule section*/
 
+/* Floorplan */
+.floorplan ol{
+  list-style: decimal !important;
+}
+
 
 /* Countdown section*/
 
@@ -1479,7 +1484,7 @@ select.error {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #EAEAEA;
+    background: #444444;
   }
   .cd-schedule .timeline li:last-of-type::after {
     display: none;
@@ -1672,35 +1677,26 @@ select.error {
 .cd-schedule .event-date {
   display: block;
   color: white;
+  line-height: 1.3em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.cd-schedule .event-name {
-  font-size: 1.3rem;
-}
+.cd-schedule .event-name{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
 
-.cd-schedule .event-sub-name{
-  font-size: 1rem;
-}
-
-
-.cd-schedule .event-date {
-  /* they are not included in the the HTML but added using JavScript */
-  font-size: 1rem;
-  opacity: .7;
-  line-height: 1.2;
-  margin-bottom: .2em;
 }
 
 .cd-schedule .single-event[data-event="event-1"],
 .cd-schedule [data-event="event-1"] .header-bg {
   /* this is used to set a background color for the event and the modal window */
-  background: #577F92;
+  background: rgba(210,18,12,1);
 }
 
 .cd-schedule .single-event[data-event="event-1"]:hover {
-  background: #618da1;
+  background: rgba(210,18,12,1);
 }
 
 .cd-schedule .single-event[data-event="event-2"],
@@ -1714,11 +1710,11 @@ select.error {
 
 .cd-schedule .single-event[data-event="event-3"],
 .cd-schedule [data-event="event-3"] .header-bg {
-  background: #A2B9B2;
+  background: #577F92;
 }
 
 .cd-schedule .single-event[data-event="event-3"]:hover {
-  background: #b1c4be;
+  background: #577F92;
 }
 
 .cd-schedule .single-event[data-event="event-4"],
